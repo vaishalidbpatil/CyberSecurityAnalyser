@@ -1,0 +1,49 @@
+﻿@model IEnumerable<CyberSecurityAnalyser.Models.RepoViewModel>
+    
+<div>
+    <h4>Repository Resources</h4>
+    <hr />
+    <dl class="dl-horizontal"></dl>
+</div>
+<p>
+    @if (Model != null)
+    {
+        <table class="table-bordered" cellspacing="0" width="100%" height="50%">
+            <thead>
+            <tr>
+                <th>
+                    File/Folder Location
+                </th>
+               
+                <th>
+                    Resource Type
+                </th>
+                
+                <th>
+                    Error Message
+                </th>
+            </tr>
+            </thead>
+            <tbody style="overflow-y: scroll;">
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td align="left" class="row">
+                        <a href="@item.Path">@item.Path</a>
+                    </td>
+                    
+                    <td align="left" class="row">
+                        @item.RepoResourceType
+                    </td>
+                   
+                    <td align="left" class="row">
+                        @item.ErrorMessage
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    }
+    else
+    { <div class="row"> No files/folder found </div>}
+    </p>

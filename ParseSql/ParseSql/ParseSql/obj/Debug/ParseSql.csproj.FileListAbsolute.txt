@@ -1,0 +1,6 @@
+C:\Users\vpatil\Documents\Visual Studio 2015\Projects\CyberSecurityAnalyser\ParseSql\ParseSql\ParseSql\bin\Debug\ParseSql.exe.config
+C:\Users\vpatil\Documents\Visual Studio 2015\Projects\CyberSecurityAnalyser\ParseSql\ParseSql\ParseSql\bin\Debug\ParseSql.exe
+C:\Users\vpatil\Documents\Visual Studio 2015\Projects\CyberSecurityAnalyser\ParseSql\ParseSql\ParseSql\bin\Debug\ParseSql.pdb
+C:\Users\vpatil\Documents\Visual Studio 2015\Projects\CyberSecurityAnalyser\ParseSql\ParseSql\ParseSql\obj\Debug\ParseSql.csprojResolveAssemblyReference.cache
+C:\Users\vpatil\Documents\Visual Studio 2015\Projects\CyberSecurityAnalyser\ParseSql\ParseSql\ParseSql\obj\Debug\ParseSql.exe
+C:\Users\vpatil\Documents\Visual Studio 2015\Projects\CyberSecurityAnalyser\ParseSql\ParseSql\ParseSql\obj\Debug\ParseSql.pdb

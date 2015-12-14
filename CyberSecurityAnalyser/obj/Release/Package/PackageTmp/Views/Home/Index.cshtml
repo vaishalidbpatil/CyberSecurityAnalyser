@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Cyber Security Analyser</h1>
+    <p class="lead">The Open Web Application Security Project (OWASP) is an online community dedicated to web application security. The OWASP community includes corporations, educational organizations and individuals from around the world. This community works to create freely-available articles, methodologies, documentation, tools, and technologies. The OWASP Foundation is a 501(c)(3) charitable organization that supports and manages OWASP projects and infrastructure. It is also a registered non profit in Europe since June 2011.</p>
+    <p><a href="https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project" class="btn btn-primary btn-lg">Learn more about OWASP</a></p>
+</div>
+
+<div class="row">
+    <Div>
+        @Html.ActionLink(linkText: "Click Here to Evaluate a Repository",
+                 actionName: "Index",
+                 controllerName: "Evaluate",routeValues: null,
+                htmlAttributes: new { @class = "btn btn-primary btn-lg" })
+    </Div>
+   
+</div>
+

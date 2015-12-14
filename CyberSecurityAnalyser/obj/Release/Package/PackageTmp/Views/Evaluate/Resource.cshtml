@@ -1,0 +1,50 @@
+﻿@model IEnumerable <CyberSecurityAnalyser.Algoritham.BaseResource>
+
+<div>
+    <h4>Repo Resource</h4>
+    <hr />
+    <dl class="dl-horizontal">
+    </dl>
+</div>
+<p>
+    @if (Model != null)
+    {
+        <div class="grid">
+            <table cellspacing="0" width="80%">
+                <thead>
+                    <tr>
+                        <th>
+                            Reource Type
+                        </th>
+                        <th>
+                            
+                        </th>
+                        <th>
+                            Resource Location
+                        </th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td align="left">
+                                @item.RepoResourceType
+                            </td>
+                            <td align="left">
+                                ::
+                            </td>
+                            <td align="left">
+                                @item.Location.Path
+                            </td>
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+        </div>
+
+    }
+</p>

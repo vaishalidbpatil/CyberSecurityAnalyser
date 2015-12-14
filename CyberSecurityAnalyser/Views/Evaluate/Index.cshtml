@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Evaluation Page";
+}
+<p>
+    <div class="row">
+        <input type="text" class="input-medium search-query" id="fullpath" width="250"/>
+        <div id="divEvaluate" class="btn btn-primary btn-lg">Evaluate</div>
+    </div>
+</p>
+<p>
+    <div id="summaryDiv"></div>
+</p>
+
+<script src="../../Scripts/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+            $(document).ready(function() {
+                $('#divEvaluate').click(function(e) {
+                    // alert("path :: " + $('#fullpath').val());
+
+                    $.ajax({
+                        url: "/Evaluate/Summary",
+                        datatype: 'json',
+                        type: "POST",
+                        contentType: "application/json; charset=utf-8;",
+                        data: JSON.stringify({
+                            repo: {
+                                Path: $("#fullpath").val()
+                            }
+                        }),
+                        success: function (response) {
+                            $('#summaryDiv').html(response);
+                        }
+                        });
+                });
+            });
+</script>
+
+

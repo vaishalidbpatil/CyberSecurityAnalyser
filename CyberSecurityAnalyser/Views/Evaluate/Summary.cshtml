@@ -1,0 +1,26 @@
+﻿@model CyberSecurityAnalyser.Models.SummaryViewModel
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Summary</title>
+</head>
+<body>
+<div>
+    <p>
+        <div>@Html.Partial("Error", @Model.ErrorViewModels)</div>
+    </p>
+    <p>
+        <div>@Html.Partial("Repository", @Model.RepoViewModels)</div>
+
+    </p>
+</div>
+</body>
+</html>

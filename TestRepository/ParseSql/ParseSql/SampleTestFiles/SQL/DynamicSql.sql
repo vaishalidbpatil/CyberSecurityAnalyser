@@ -1,0 +1,1 @@
+SET @sqlTest = 'Select * from Table employee'
